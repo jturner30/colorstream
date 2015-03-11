@@ -49,6 +49,8 @@ def main():
                 if not written:
                     sys.stdout.write(line)
             time.sleep(0.01)
+    except KeyboardInterrupt:
+        sys.exit(0)
     except KeyError:
         sys.stdout.write('profile not found')
         sys.exit(-1)
