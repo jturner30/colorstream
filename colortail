@@ -37,7 +37,7 @@ def main():
         last_line = ''
         while True:
             line = sys.stdin.readline()
-            if line == 'EOF':
+            if line == '':
                 sys.exit(0)
             if line != last_line:
                 written = False
