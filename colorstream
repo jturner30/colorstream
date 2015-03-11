@@ -45,6 +45,7 @@ def main():
                     if re.findall(key, line):
                         sys.stdout.write(wrap_with_color(line, value))
                         written = True
+                        break
                 last_line = line
                 if not written:
                     sys.stdout.write(line)
